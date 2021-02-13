@@ -4,8 +4,16 @@
 <head>
     <title>James Bastone</title>
     <style>
+        #bgdiv {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+        }
+
         .rainbow {
-            background: linear-gradient(164deg, rgba(255, 0, 0, 1) 7%, rgba(255, 149, 0, 1) 21%, rgba(244, 255, 0, 1) 35%, rgba(4, 255, 0, 1) 49%, rgba(0, 98, 255, 1) 63%, rgba(242, 0, 255, 1) 77%, rgba(181, 0, 255, 1) 91%);
+            background: repeating-linear-gradient(145deg, rgba(255, 0, 0, 1) 0%, rgba(255, 149, 0, 1) 21%, rgba(244, 255, 0, 1) 35%, rgba(4, 255, 0, 1) 49%, rgba(0, 98, 255, 1) 63%, rgba(242, 0, 255, 1) 77%, rgba(181, 0, 255, 1) 100%);
         }
 
         .card {
@@ -51,44 +59,35 @@
             margin-left: auto;
             margin-right: auto;
         }
-
-        html {
-            height: 100%;
-        }
-
-        body {
-            height: 100%;
-            margin: 0;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-        }
     </style>
 </head>
 
-<body style="text-align: center" class="rainbow">
+<body style="text-align: center">
+    <div id="bgdiv" class="rainbow">
 
-    <div class="disclaimer">Yes, I can make proper websites, I just like mine like this.</div>
+        <div class="disclaimer">Yes, I can make proper websites, I just like mine like this.</div>
 
-    <div class="card">
-        <div class="front">
-            <h1>James Bastone</h1>
-            <h4><em>Programmer & Business Consultant</em></h4>
-            <p class="reducebottommargin">
-                <strong>contact me</strong>
-            </p>
-            <p class="reducebottommargin"><a href="mailto:james@bastone.co.uk">james@bastone.co.uk</a></p>
-            <p class="reducebottommargin"><a href="tel:+447738489759">07738 489 759</a></p>
+        <div class="card">
+            <div class="front">
+                <h1>James Bastone</h1>
+                <h4><em>Programmer & Business Consultant</em></h4>
+                <p class="reducebottommargin">
+                    <strong>contact me</strong>
+                </p>
+                <p class="reducebottommargin"><a href="mailto:james@bastone.co.uk">james@bastone.co.uk</a></p>
+                <p class="reducebottommargin"><a href="tel:+447738489759">07738 489 759</a></p>
+            </div>
         </div>
-    </div>
 
-    <div class="card">
-        <h1>Qualifications</h1>
-        <h4><em>BA(Hons) Philosophy and Psychological Studies</em></h4>
-        <h4><em>Dip. HE Business Studies</em></h4>
-        <h4><em>Cambridge TESOL - CELTA</em></h4>
-        <p class="details">
-            Teaching English to Speakers of Other Languages
-        </p>
+        <div class="card">
+            <h1>Qualifications</h1>
+            <h4><em>BA(Hons) Philosophy and Psychological Studies</em></h4>
+            <h4><em>Dip. HE Business Studies</em></h4>
+            <h4><em>Cambridge TESOL - CELTA</em></h4>
+            <p class="details">
+                Teaching English to Speakers of Other Languages
+            </p>
+        </div>
     </div>
 </body>
 
